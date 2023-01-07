@@ -91,7 +91,7 @@ jobs:
           git config --global user.name "GitHub CD bot"
           git config --global user.email "${GITHUB_EMAIL}"
           npm run release -- --release-as ${{github.event.inputs.newVersion}}        
-          git push --follow-tags origin master
+          git push --follow-tags origin main
       - name: "📄 Create Changelog"
         uses: Bullrich/generate-release-changelog@master
         id: Changelog
@@ -108,6 +108,6 @@ jobs:
             
             ---
             
-            > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
+            > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/main/CHANGELOG.md) file.
           draft: false
           prerelease: false
