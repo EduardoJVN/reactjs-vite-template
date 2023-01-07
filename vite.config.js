@@ -9,10 +9,14 @@ export default defineConfig({
   },
   test: {
     css: false,
-    include: ['src/**/__tests__/*'],
+    include: ['src/**/__tests__/*', 'src/__tests__/*'],
     globals: true,
     environment: 'jsdom',
-    setupFiles: 'src/setupTests.ts',
+    // setupFiles: 'src/setupTests.ts',
     clearMocks: true,
+    coverage: {
+      provider: 'c8', // or 'c8'
+      reporter: ['text', 'json', 'html'],
+    },
   },
 });
