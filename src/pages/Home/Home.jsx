@@ -6,7 +6,7 @@ function Home() {
     <Container sx={{ py: 2, position: 'relative' }}>
       <Stack gap={1} my={2}>
         <Typography textAlign="center" variant="h2">
-          Viterjs-template
+          reactjs-vite-tempalte
         </Typography>
         <Typography textAlign="center" variant="subtitle1">
           React + Redux + MuI + Axios + ESlint + Prettier
