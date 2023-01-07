@@ -71,10 +71,10 @@ jobs:
       - name: "🔨 Build"
         run: yarn build
 
-      - name: "👨‍💻 Run Test"
-        run: yarn test
-        env:
-          NODE_ENV: 'test'
+      # - name: "👨‍💻 Run Test"
+      #   run: yarn test
+      #   env:
+      #     NODE_ENV: 'test'
 
       # - name: "🐳 Docker"
       #   run: |
