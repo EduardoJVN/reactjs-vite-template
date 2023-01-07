@@ -25,11 +25,18 @@
     "test:cover": "vitest run --coverage",
     "test:e2e": "pnpm preview:test 'cypress open'",
     "test:e2e:headless": "pnpm preview:test 'cypress run'",
-    "test:e2e:ci": "vite build && pnpm preview:test 'cypress run --record'"
+    "test:e2e:ci": "vite build && pnpm preview:test 'cypress run --record'",
+    "pre-commit": "lint-staged"
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,md,tsx,jsx,js}": [
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "husky": {
@@ -70,6 +77,8 @@
     "vite-plugin-fonts": "^0.7.0",
     "vitest": "^0.26.3",
     "@commitlint/cli": "^16.1.0",
-    "@commitlint/config-conventional": "^16.0.0"
+    "@commitlint/config-conventional": "^16.0.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^12.3.3"
   }
 }
