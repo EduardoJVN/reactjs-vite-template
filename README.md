@@ -1,31 +1,16 @@
 ## viterjs-template
 
 JavaScript + React + Redux + Mui + Axios + ESLint + Prettier
-
-![viterjs-template](https://iili.io/yYpGaV.md.png)
-
-### Getting Started
-
-#### Clone the repo
-
-```
-npx degit emre-cil/viterjs-template my-app
-```
-
-```
-cd my-app
-```
-
 #### Install Dependencies
 
 ```
-pnpm install
+yarn install
 ```
 
 #### Run
 
 ```
-pnpm dev
+yarn dev
 ```
 
 
@@ -33,13 +18,13 @@ pnpm dev
 
 | Script        | Description                        |
 | ------------- | ---------------------------------- |
-| pnpm dev      | Runs the application.              |
-| pnpm build    | Create builds for the application. |
-| pnpm preview  | Runs the Vite preview              |
-| pnpm lint     | Display eslint errors              |
-| pnpm lint:fix | Fix the eslint errors              |
-| pnpm format   | Runs prettier for all files        |
-| pnpm test     | Run tests                          |
+| yarn start:dev| Runs the application.        |
+| yarn build    | Create builds for the application. |
+| yarn preview  | Runs the Vite preview              |
+| yarn lint     | Display eslint errors              |
+| yarn lint:fix | Fix the eslint errors              |
+| yarn format   | Runs prettier for all files        |
+| yarn test     | Run tests                          |
 
 
 ### Check List
