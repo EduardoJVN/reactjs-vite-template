@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { setCredentials, logOut } from '../../features/user/userSlice';
+import { setCredentials, logOut } from '../slices/user';
 
 const baseQuery = fetchBaseQuery({
   baseUrl: import.meta.env.VITE_API_URL,
@@ -27,7 +27,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
   return result;
 };
 
-export const apiSlice = createApi({
+export const api = createApi({
   baseQuery: baseQueryWithReauth,
   endpoints: () => ({}),
 });

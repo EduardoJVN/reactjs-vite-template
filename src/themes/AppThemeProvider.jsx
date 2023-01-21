@@ -1,6 +1,6 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { useSelector } from 'react-redux';
-import { selectMode } from '../features/user/userSlice';
+import { selectMode } from '../slices/theme';
 
 export function AppThemeProvider({ children }) {
   const mode = useSelector(selectMode);
